@@ -9,7 +9,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 0 auto;
 }
 
@@ -40,28 +40,73 @@ body {
 
 /* menu style */
 
-nav{
+nav {
     background-color: #333;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     padding: 0;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     text-align: center;
     color: #fff;
     display: block;
     padding: 10px;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #555;
 }
-@media screen and (min-width:768px){
-    nav ul{
+
+a.tw {
+    background: url(./tw.png) no-repeat center;
+    background-size: 80%;
+
+}
+
+a.fb {
+    background: url(./fb.png) no-repeat center;
+    background-size: 80%;
+}
+
+nav ul.social {
+    flex: 1 1 0;
+    display: flex;
+}
+
+nav ul.social li{
+    flex: 1 1 0;
+}
+.social a {
+    text-indent: -10000px;
+}
+
+.social {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    nav ul {
         display: flex;
     }
-    nav li{
-        flex:1 1 0;
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .social{
+        margin: 0;
     }
 }
