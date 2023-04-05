@@ -1,35 +1,39 @@
-*{
+* {
     font-family: verdana;
     margin: 0;
 }
 
-body{
+body {
     background: #eee;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.box{
+.box {
     height: 100px;
-    min-width: 100px;
-    /* flex-grow: 1; */
+    flex: 1;
 }
-.one{
-    flex-grow: 1;
+
+.one {
     background-color: blue;
+    flex-basis: 100px;
 }
-.two{
-    flex-grow: 2;
+
+.two {
     background-color: red;
+    flex-basis: 200px;
 }
-.three{
-    flex-grow: 3;
+
+.three {
     background-color: yellow;
+    flex-basis: 300px;
 }
