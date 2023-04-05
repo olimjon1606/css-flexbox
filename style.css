@@ -37,3 +37,20 @@ body {
     background-color: yellow;
     flex-basis: 300px;
 }
+
+/* menu style */
+
+nav{
+    background-color: #333;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    /* text-align: center; */
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
